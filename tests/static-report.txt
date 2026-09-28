@@ -1,0 +1,6 @@
+NOTE: Comparison video slot intentionally empty.
+NOTE: Comparison video slot intentionally empty.
+PASS: 25 unique anchors; 2 video slots; 2 original paper figures; 4 icon-identified result groups; no full tables or expandable layers.
+PASS: visible zero-shot/static and adaptive baselines, bar lengths, absolute gains, selected forgetting/action counts.
+PASS: local assets, source PDF hash, figure provenance, citation, and archived CSV/JSON consistency.
+Not checked: external links, real-recording playback, or live GitHub Pages deployment.

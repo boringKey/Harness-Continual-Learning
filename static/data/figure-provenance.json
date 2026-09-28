@@ -1,0 +1,32 @@
+{
+  "source_filename": "Harness_Continual_Learning__Continual_Adaptation_Beyond_Model_Parameters.pdf",
+  "sha256": "981d91543ed59fc13879bf9837e6278e8afdcea5d5af9bc8414232ea81fa4eb9",
+  "figures": {
+    "framework": {
+      "source_page": 4,
+      "crop_pdf_points": [
+        107,
+        82,
+        505,
+        313
+      ],
+      "pixel_width": 3184,
+      "pixel_height": 1848,
+      "png": "static/images/framework.png"
+    },
+    "comparison": {
+      "source_page": 2,
+      "crop_pdf_points": [
+        107.0,
+        81.0,
+        505.0,
+        242.0
+      ],
+      "pixel_width": 3184,
+      "pixel_height": 1288,
+      "png": "static/images/figure-1-comparison.png",
+      "webp": "static/images/figure-1-comparison.webp",
+      "method": "PDF-page rendering at 8 px per point, cropped to the complete original Figure 1. No redrawing, recoloring, or alteration of the figure."
+    }
+  }
+}

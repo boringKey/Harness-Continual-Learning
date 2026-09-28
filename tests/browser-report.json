@@ -1,0 +1,112 @@
+{
+  "version": "v10",
+  "render_mode": "Chromium portable HTML and local HTTP /HCL/ static site; not a live deployment",
+  "widths": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 5996,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "height": 5854,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "height": 5658,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 5708,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 620,
+      "scrollWidth": 620,
+      "height": 5617,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 720,
+      "scrollWidth": 720,
+      "height": 5260,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 721,
+      "scrollWidth": 721,
+      "height": 4326,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 4296,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 820,
+      "scrollWidth": 820,
+      "height": 4292,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4330,
+      "overflow": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4357,
+      "overflow": [],
+      "outside": []
+    }
+  ],
+  "checks": {
+    "responsive_layout": "11 widths; no document or selected-component horizontal overflow.",
+    "v10_targeted_changes": "Minecraft-specific demo title/description; three repeated paper deep links removed; both caption enlargement controls retained.",
+    "content": "Full navbar name; videos first; original Figures 1 and 2; four inline SVG experiment icons; old comparison and standalone equation absent.",
+    "image_viewer": "Both original figures opened at 3184px; size toggle, Escape, close button, caption action and focus return passed.",
+    "citation_button": {
+      "reported_status": "BibTeX copied to clipboard.",
+      "limit": "OS clipboard contents were not independently read."
+    },
+    "portable_pdf": "PDF source links resolve to embedded manuscript Blob; PDF viewer navigation is not independently tested.",
+    "local_http": {
+      "status": "not tested",
+      "reason": "Chromium environment blocks localhost navigation (ERR_BLOCKED_BY_ADMINISTRATOR). No attempt was made to override this restriction."
+    },
+    "screenshot_basis": "Portable HTML with embedded local assets",
+    "no_javascript": "Research prose, original image links, four result groups and all baseline values remain visible without JavaScript.",
+    "config_and_media_error": "Editable title/caption and code URL applied. Synthetic unavailable-media event restores the placeholder. This is not real video playback.",
+    "unsafe_url_rejection": "javascript: values rejected for video and research-code URL."
+  },
+  "errors": [],
+  "chromium_version": "144.0.7559.96",
+  "source_hashes": {
+    "index.html": "0b8851530a8ef5ceeda9e3aefbf4ea4d77a3831e4d5318c185a0e78073518c97",
+    "static/css/style.css": "0beead93976169132e67d8819c716431926c96475052cbc72067104aa593ebb9",
+    "static/js/main.js": "012474a3dad846f072fe7272e38c04c48c432ebc1ccb7102166497626f5561f3",
+    "static/js/config.js": "aed0c72ac5b042eddde5fd5f4de2388c1fb8f5073a03848cc7955655747b4495",
+    "static/data/results.json": "76b0ce2b083e0fcd2bc49a1298583a8a4c9da3ec8dce3a7778ac153f715e42b5",
+    "static/data/figure-provenance.json": "c01575bd2ab9481dd8cd66a3ac67875561474ce5952e02f9cedb96df270e0cc0"
+  }
+}

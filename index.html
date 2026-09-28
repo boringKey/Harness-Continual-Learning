@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="hcl-deployment" content="hcl-v10-pages-fix-20260928"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>Harness Continual Learning</title>
+<meta content="Harness Continual Learning: Continual Adaptation Beyond Model Parameters. The harness becomes the continual learning state. Acquire and retain capabilities without updating model weights." name="description"/>
+<link href="https://boringkey.github.io/Harness-Continual-Learning/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Harness Continual Learning" property="og:title"/>
+<meta content="The harness becomes the continual learning state. Continual Adaptation Beyond Model Parameters." property="og:description"/>
+<meta content="https://boringkey.github.io/Harness-Continual-Learning/" property="og:url"/>
+<meta content="https://boringkey.github.io/Harness-Continual-Learning/static/images/social-card.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Harness Continual Learning: Continual Adaptation Beyond Model Parameters" name="citation_title"/>
+<meta content="Borui Kang" name="citation_author"/><meta content="Jinrui Gu" name="citation_author"/><meta content="Junhan Lv" name="citation_author"/><meta content="Wenbin Li" name="citation_author"/><meta content="Lei Wang" name="citation_author"/><meta content="Yang Gao" name="citation_author"/>
+<meta content="2608.19013" name="citation_arxiv_id"/>
+<meta content="https://boringkey.github.io/Harness-Continual-Learning/static/paper/HCL.pdf" name="citation_pdf_url"/>
+<link href="static/images/paper-mark.png" rel="icon" type="image/png"/>
+<link href="static/css/style.css" rel="stylesheet"/>
+<script defer="" src="static/js/config.js"></script>
+<script defer="" src="static/js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav aria-label="Main navigation" class="nav-shell">
+<a aria-label="Harness Continual Learning, back to top" class="brand" href="#top"><img alt="" height="32" src="static/images/paper-mark.png" width="30"/><span>Harness Continual Learning</span></a>
+<div class="nav-links"><a href="#demos">Demos</a><a href="#overview">Overview</a><a href="#method">Framework</a><a href="#experiments">Results</a></div>
+<a class="nav-paper" href="static/paper/HCL.pdf" rel="noopener noreferrer" target="_blank">Read the paper ↗</a>
+</nav></header>
+<main id="main">
+<section class="hero container" id="top">
+<h1>Harness Continual Learning<span class="subtitle">Continual Adaptation Beyond Model Parameters</span></h1>
+<div aria-label="Authors" class="authors"><span>Borui Kang<sup>1</sup></span><span>Jinrui Gu<sup>1</sup></span><span>Junhan Lv<sup>1</sup></span><span>Wenbin Li<sup>1,*</sup></span><span>Lei Wang<sup>2</sup></span><span>Yang Gao<sup>1</sup></span></div>
+<div class="affiliations"><p><sup>1</sup> State Key Laboratory for Novel Software Technology, Nanjing University, China</p><p><sup>2</sup> University of Wollongong, Australia <span class="correspondence">* Corresponding author</span></p></div>
+<div class="resource-links">
+<a class="button button-primary" href="static/paper/HCL.pdf" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M8 13h8M8 17h6"></path></svg> Paper</a>
+<a class="button" href="https://arxiv.org/abs/2608.19013" rel="noopener noreferrer" target="_blank">arXiv <svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"></path></svg></a>
+<a class="button" href="#demos"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"></path></svg> Demos</a>
+<span id="code-resource"><button class="button button-disabled" disabled="" title="The research-code link has not been supplied." type="button"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path></svg> Code <span class="tiny">forthcoming</span></button></span>
+<a class="button" href="#citation"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M10 5H4v7h5c0 4-2 6-5 7M20 5h-6v7h5c0 4-2 6-5 7"></path></svg> BibTeX</a>
+</div>
+</section><section aria-labelledby="demos-title" class="section demos-section container" id="demos"><div class="section-heading editorial-heading"><h2 id="demos-title">Continual learning in Minecraft</h2><p>Capability accumulation and skill reuse across sequential Minecraft tasks.</p></div><div class="video-grid"><figure class="video-card" id="comparison-1">
+<div class="video-stage blue-stage"><div class="video-placeholder"><span class="play-mark"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"></path></svg></span><span class="placeholder-label">Comparison video forthcoming</span></div><video aria-label="Comparison 1" controls="" hidden="" playsinline="" preload="metadata"></video></div>
+<figcaption><div><h3 class="video-title">Comparison 1</h3><p class="video-caption">A comparison recording will be added here.</p></div></figcaption></figure><figure class="video-card" id="comparison-2">
+<div class="video-stage sage-stage"><div class="video-placeholder"><span class="play-mark"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"></path></svg></span><span class="placeholder-label">Comparison video forthcoming</span></div><video aria-label="Comparison 2" controls="" hidden="" playsinline="" preload="metadata"></video></div>
+<figcaption><div><h3 class="video-title">Comparison 2</h3><p class="video-caption">A comparison recording will be added here.</p></div></figcaption></figure></div></section>
+<section aria-labelledby="overview-title" class="section overview-section container" id="overview">
+<div class="overview-intro">
+<h2 id="overview-title">The harness becomes the <span>continual learning state.</span></h2>
+<div class="overview-copy"><p>HCL makes prompts, memories, skills, and routing a persistent learning state around a frozen foundation model.</p><p>Changing that state can improve a new task and disrupt an earlier success. <strong>Frozen weights do not eliminate forgetting.</strong></p></div>
+</div>
+<figure class="paper-figure concept-figure" id="connections">
+<a aria-label="Enlarge original Figure 1: model-centric and harness-centric continual learning" class="figure-zoom" data-figure="Figure 1 · The shift in the object of continual learning" href="static/images/figure-1-comparison.png">
+<picture><source sizes="(max-width: 620px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 56px), 1000px" srcset="static/images/figure-1-comparison-1600.webp 1600w, static/images/figure-1-comparison.webp 3184w" type="image/webp"/>
+<img alt="Original Figure 1 from the paper. Left: model-centric continual learning updates model parameters across tasks. Right: harness-centric continual learning evolves the harness around a frozen foundation model. Both can acquire new capabilities while forgetting earlier ones." decoding="async" height="1288" loading="lazy" src="static/images/figure-1-comparison.png" width="3184"/></picture>
+</a>
+<figcaption><p><strong>Figure 1.</strong> The learning object shifts from model parameters to the harness. Both settings face the acquisition–retention challenge.</p><div class="figure-actions"><a data-figure="Figure 1 · The shift in the object of continual learning" href="static/images/figure-1-comparison.png">Enlarge figure</a></div></figcaption>
+</figure>
+<div class="shared-principle">
+<h3>Acquire new capabilities.<br/><span>Retain earlier ones.</span></h3>
+<p><strong>One objective, two learning states.</strong> HCL brings the functions of replay, representation, architecture, and update control into a single evolving harness—extending continual learning beyond model parameters.</p>
+</div>
+</section>
+<section aria-labelledby="method-title" class="section framework-section container" id="method">
+<div class="section-heading editorial-heading"><h2 id="method-title">Guarded harness evolution</h2><p>The harness changes through feedback. Deployment changes only after evaluation.</p></div>
+<figure class="paper-figure">
+<a class="figure-zoom" data-figure="Figure 2 · Overview of Harness Continual Learning" href="static/images/framework.png" rel="noopener" target="_blank">
+<picture><source sizes="(max-width: 720px) 94vw, 1000px" srcset="static/images/framework-1600.webp 1600w, static/images/framework.webp 3184w" type="image/webp"/><img alt="Original Figure 2 from the paper. Task Interface, Experience Memory, Capability Map and Adaptive Router support the agent runtime. Execution feedback leads to candidate generation, evaluation and acceptance or rejection." decoding="async" height="1848" loading="eager" src="static/images/framework.png" width="3184"/></picture>
+
+</a>
+<figcaption><p><strong>Figure 2.</strong> The four harness components support execution; the Optimizer and Evaluator govern persistent updates.</p><div class="figure-actions"><a data-figure="Figure 2 · Overview of Harness Continual Learning" href="static/images/framework.png">Enlarge figure</a></div></figcaption>
+</figure>
+<div class="framework-reading">
+<div class="framework-state">
+<h3>What changes in the harness</h3><p class="component-intro">Prompts, memories, skills, and routing rules are maintained as one evolving, jointly versioned state.</p>
+<dl class="component-definitions">
+<div><dt>Task Interface</dt><dd>Prompts, task templates, and parsing rules.</dd></div>
+<div><dt>Experience Memory</dt><dd>Interaction records and reusable guidance.</dd></div>
+<div><dt>Capability Map</dt><dd>External tools and experience-derived skills.</dd></div>
+<div><dt>Adaptive Router</dt><dd>Memory selection, capability use, and workflows.</dd></div>
+</dl></div>
+<div class="framework-commitment">
+<h3>How updates are accepted</h3>
+<p>The <strong>Continual Optimizer</strong> uses execution feedback to revise selected harness components. The <strong>Continual Evaluator</strong> checks the candidate before it can enter the deployed state.</p>
+<div aria-label="Three requirements for candidate commitment" class="commit-criteria"><p><strong>Current improvement</strong><span>Meet the validation-gain threshold.</span></p><p><strong>Historical retention</strong><span>Keep earlier-behavior regressions within budget.</span></p><p><strong>Task validity</strong><span>Respect output, tool-use, and environment constraints.</span></p></div>
+<p class="commit-outcome">Commit an admissible candidate; otherwise, keep the current harness. The next interaction uses the committed state.</p>
+</div></div></section><section aria-labelledby="results-title" class="section results-section" id="experiments"><div class="container">
+<div class="section-heading editorial-heading"><h2 id="results-title">Continual learning in practice</h2><p>Four settings. The same frozen model within each comparison.</p></div>
+<p class="results-intro">Compare with a static harness in open-world tasks and with zero-shot inference in the controlled streams.</p>
+<div aria-label="Selected results, starting baselines, and memory-based comparisons" class="selected-results"><article class="selected-result" data-baseline="Static Harness" data-baseline-value="47.12" data-gain="15.86" data-method="Plasticity-HCL" data-setting="alfworld" data-value="62.98">
+<div class="result-heading"><span aria-hidden="true" class="result-pictogram"><svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewBox="0 0 48 48"><path d="M8 23 24 9l16 14"></path><path d="M12 20v20h24V20"></path><path d="M20 40V29h8v11"></path><path d="M29 12v-4h6v10"></path><path d="M15.5 25h3"></path></svg></span><div class="result-identity"><h3>ALFWorld</h3><p class="result-domain">Household interaction</p></div></div>
+<div class="result-body"><div class="result-highlight"><div class="score-readout"><p class="result-number">62.98<span>%</span></p><p class="result-metric">Final average success</p></div><div class="result-improvement"><p aria-label="15.86 percentage points higher than Static Harness" class="result-gain">+15.86 pp</p><p class="result-baseline">vs Static Harness</p></div></div>
+<div class="result-comparisons"><div aria-label="ALFWorld reported final outcomes" class="result-bars" role="group"><div class="bar-entry starting" data-method="Static Harness" data-value="47.12"><div class="bar-label"><span>Static Harness</span><strong>47.12%</strong></div><div aria-hidden="true" class="bar-track"><span style="width:47.12%"></span></div></div><div class="bar-entry adaptive" data-method="MemRL" data-value="60.68"><div class="bar-label"><span>MemRL</span><strong>60.68%</strong></div><div aria-hidden="true" class="bar-track"><span style="width:60.68%"></span></div></div><div class="bar-entry hcl" data-method="Plasticity-HCL" data-value="62.98"><div class="bar-label"><span>Plasticity-HCL</span><strong>62.98%</strong></div><div aria-hidden="true" class="bar-track"><span style="width:62.98%"></span></div></div></div><p class="secondary-comparison">Also <strong>+2.30 pp</strong> vs MemRL.</p></div></div>
+<div class="result-detail"><span class="result-profile">Plasticity-HCL</span><span class="result-context">10.94% average forgetting</span><p class="result-model">Qwen3.5-9B</p></div>
+</article><article class="selected-result" data-baseline="Static Harness" data-baseline-value="15" data-gain="35" data-method="Plasticity-HCL" data-setting="minecraft" data-value="50">
+<div class="result-heading"><span aria-hidden="true" class="result-pictogram"><svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewBox="0 0 48 48"><path d="m24 8 16 9-16 9-16-9Z"></path><path d="m8 17 0 17 16 9 16-9V17M24 26v17"></path><path d="m16 12 16 9M16 22l16-10M8 26l16 9 16-9"></path></svg></span><div class="result-identity"><h3>Minecraft</h3><p class="result-domain">Long-horizon skill reuse</p></div></div>
+<div class="result-body"><div class="result-highlight"><div class="score-readout"><p class="result-number">50<span>/50</span></p><p class="result-metric">Curriculum tasks completed</p></div><div class="result-improvement"><p aria-label="35 more completed tasks than Static Harness" class="result-gain">+35 tasks</p><p class="result-baseline">vs Static Harness</p></div></div>
+<div class="result-comparisons"><div aria-label="Minecraft reported final outcomes" class="result-bars" role="group"><div class="bar-entry starting" data-method="Static Harness" data-value="15"><div class="bar-label"><span>Static Harness</span><strong>15/50</strong></div><div aria-hidden="true" class="bar-track"><span style="width:30.00%"></span></div></div><div class="bar-entry hcl" data-method="Plasticity-HCL" data-value="50"><div class="bar-label"><span>Plasticity-HCL</span><strong>50/50</strong></div><div aria-hidden="true" class="bar-track"><span style="width:100.00%"></span></div></div></div><p class="secondary-comparison">Fewer actions than both memory-based baselines.</p></div></div>
+<div class="result-detail"><span class="result-profile">Plasticity-HCL</span><span class="result-context">83 actions · MemRL 88 · MemP 91</span><p class="result-model">deepseek-v4-flash-0731</p></div>
+</article><article class="selected-result" data-baseline="Zero-shot" data-baseline-value="63.65" data-gain="12.45" data-method="Plasticity-HCL" data-setting="textual" data-value="76.1">
+<div class="result-heading"><span aria-hidden="true" class="result-pictogram"><svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewBox="0 0 48 48"><path d="M11 8h20l6 6v26H11Z"></path><path d="M30 8v8h7M17 21h14M17 27h8M17 33h4"></path><path d="m28 33 3 3 6-7"></path></svg></span><div class="result-identity"><h3>Textual reasoning</h3><p class="result-domain">Question answering &amp; reasoning</p></div></div>
+<div class="result-body"><div class="result-highlight"><div class="score-readout"><p class="result-number">76.10<span>%</span></p><p class="result-metric">Final average accuracy</p></div><div class="result-improvement"><p aria-label="12.45 percentage points higher than Zero-shot" class="result-gain">+12.45 pp</p><p class="result-baseline">vs Zero-shot</p></div></div>
+<div class="result-comparisons"><div aria-label="Textual reasoning reported final outcomes" class="result-bars" role="group"><div class="bar-entry starting" data-method="Zero-shot" data-value="63.65"><div class="bar-label"><span>Zero-shot</span><strong>63.65%</strong></div><div aria-hidden="true" class="bar-track"><span style="width:63.65%"></span></div></div><div class="bar-entry adaptive" data-method="MemRL" data-value="68.85"><div class="bar-label"><span>MemRL</span><strong>68.85%</strong></div><div aria-hidden="true" class="bar-track"><span style="width:68.85%"></span></div></div><div class="bar-entry hcl" data-method="Plasticity-HCL" data-value="76.1"><div class="bar-label"><span>Plasticity-HCL</span><strong>76.10%</strong></div><div aria-hidden="true" class="bar-track"><span style="width:76.10%"></span></div></div></div><p class="secondary-comparison">Also <strong>+7.25 pp</strong> vs MemRL.</p></div></div>
+<div class="result-detail"><span class="result-profile">Plasticity-HCL</span><span class="result-context">0.40% average forgetting</span><p class="result-model">DeepSeek-V4.1-Flash</p></div>
+</article><article class="selected-result" data-baseline="Zero-shot" data-baseline-value="46.77" data-gain="22.15" data-method="Stability-HCL" data-setting="multimodal" data-value="68.92">
+<div class="result-heading"><span aria-hidden="true" class="result-pictogram"><svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewBox="0 0 48 48"><rect height="28" rx="4" width="32" x="8" y="10"></rect><circle cx="17" cy="19" r="3"></circle><path d="m10 35 10-10 7 6 5-5 8 9"></path><path d="M3 17v-6a6 6 0 0 1 6-6h5M34 5h5a6 6 0 0 1 6 6v6M3 32v6a5 5 0 0 0 5 5h6M34 43h6a5 5 0 0 0 5-5v-6"></path></svg></span><div class="result-identity"><h3>Multimodal perception</h3><p class="result-domain">Visual understanding</p></div></div>
+<div class="result-body"><div class="result-highlight"><div class="score-readout"><p class="result-number">68.92<span></span></p><p class="result-metric">Final mean score</p></div><div class="result-improvement"><p aria-label="22.15 score points higher than Zero-shot" class="result-gain">+22.15 pts</p><p class="result-baseline">vs Zero-shot</p></div></div>
+<div class="result-comparisons"><div aria-label="Multimodal perception reported final outcomes" class="result-bars" role="group"><div class="bar-entry starting" data-method="Zero-shot" data-value="46.77"><div class="bar-label"><span>Zero-shot</span><strong>46.77</strong></div><div aria-hidden="true" class="bar-track"><span style="width:46.77%"></span></div></div><div class="bar-entry adaptive" data-method="MemP" data-value="65.16"><div class="bar-label"><span>MemP</span><strong>65.16</strong></div><div aria-hidden="true" class="bar-track"><span style="width:65.16%"></span></div></div><div class="bar-entry hcl" data-method="Stability-HCL" data-value="68.92"><div class="bar-label"><span>Stability-HCL</span><strong>68.92</strong></div><div aria-hidden="true" class="bar-track"><span style="width:68.92%"></span></div></div></div><p class="secondary-comparison">Also <strong>+3.76 pts</strong> vs MemP.</p></div></div>
+<div class="result-detail"><span class="result-profile">Stability-HCL</span><span class="result-context">0.22% average forgetting</span><p class="result-model">Qwen3.6-27B</p></div>
+</article></div>
+<div class="evidence-note"><p>Gains are absolute: <strong>pp</strong> = percentage points; <strong>pts</strong> = score points. Performance and forgetting should be read together. Metrics differ across settings.</p></div>
+</div></section>
+<section class="section citation-section" id="citation"><div class="container citation-container">
+<div class="citation-heading"><div><h2>Citation</h2></div><div class="citation-actions"><a download="" href="citation.bib">Download .bib</a><button class="button" id="copy-bibtex" type="button"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><rect height="13" rx="2" width="12" x="8" y="8"></rect><path d="M15 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4"></path></svg> <span>Copy citation</span></button></div></div>
+<pre class="bibtex"><code id="bibtex-code">@misc{kang2026harnesscontinuallearning,
+  title         = {Harness Continual Learning: Continual Adaptation Beyond Model Parameters},
+  author        = {Borui Kang and Jinrui Gu and Junhan Lv and Wenbin Li and Lei Wang and Yang Gao},
+  year          = {2026},
+  eprint        = {2608.19013},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2608.19013}
+}</code></pre><p aria-live="polite" class="copy-status" id="copy-status" role="status"></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner">
+<p>Harness Continual Learning</p><div><a href="https://github.com/boringKey/Harness-Continual-Learning" id="website-source" rel="noopener noreferrer" target="_blank">Website source</a><span>·</span><a href="https://nerfies.github.io/" rel="noopener noreferrer" target="_blank">Design reference: Nerfies</a></div>
+</div></footer>
+<dialog aria-labelledby="figure-dialog-title" id="figure-dialog"><div class="dialog-toolbar"><p id="figure-dialog-title">Paper figure</p><div><button class="button" id="figure-fit" type="button">Original size</button><a class="button" href="static/images/framework.png" id="figure-original" rel="noopener" target="_blank">Open image <svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"></path></svg></a><button aria-label="Close figure" class="icon-button" id="figure-close" type="button"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div></div><div class="dialog-image-view"><img alt="" id="dialog-image"/></div></dialog>
+</body>
+</html>

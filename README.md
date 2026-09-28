@@ -2,23 +2,26 @@
 
 **Continual Adaptation Beyond Model Parameters**
 
-This repository hosts the static research project website. The page preserves the v10 design, the original manuscript figures, selected experimental results, and two reserved Minecraft comparison-video slots.
+This repository contains the research project website, the author-supplied manuscript, original figures, selected results, and two reserved Minecraft comparison-video slots. This is the website source, not a claim that the research implementation has been released.
 
-- Repository: https://github.com/boringKey/Harness-Continual-Learning
-- Target project-page URL: https://boringkey.github.io/Harness-Continual-Learning/
-- arXiv: https://arxiv.org/abs/2608.19013
+**Project website (after Pages deployment):** https://boringkey.github.io/Harness-Continual-Learning/
 
-The project-page URL becomes available after the site files have been uploaded and GitHub Pages has deployed successfully. This repository is the website source; it does not by itself indicate a release of the research implementation.
+**Paper on arXiv:** https://arxiv.org/abs/2608.19013
 
 ## Publish
 
-1. Upload the contents of the prepared `Harness-Continual-Learning` folder to the repository root. `index.html` and `static/` must be directly at the root, not inside another nested folder. Do not upload the ZIP itself.
-2. In **Settings → Pages → Build and deployment**, select **Deploy from a branch**, **main**, and **/(root)**, then save.
-3. Check the Pages deployment in **Actions**. Use the **Visit site** link in Pages settings after a successful deployment.
+Upload `index.html`, `static/`, and the other package contents directly to the repository root. Do not upload the ZIP or a nested parent directory. Then select **Settings → Pages → Deploy from a branch → main → /(root)** and save. Verify the deployment in Actions before sharing the website URL.
 
-The `.nojekyll` file is intentionally present. No Node.js, npm, or frontend build step is required.
+For the complete instructions and the 404 diagnosis, see [DEPLOY.zh-CN.md](DEPLOY.zh-CN.md).
 
-For detailed instructions, see [DEPLOY.zh-CN.md](DEPLOY.zh-CN.md) after uploading the full site package.
+Alternatively, use the included publisher on your computer with Python 3.9+ and the GitHub CLI:
+
+```bash
+gh auth login --hostname github.com --web
+python3 scripts/publish_pages.py
+```
+
+The script publishes only to `boringKey/Harness-Continual-Learning`, never force-pushes, preserves remote-only files and existing video configuration, and verifies the live page and key assets. It does not modify your personal-homepage repository. It asks for confirmation before writing.
 
 ## Local preview
 
@@ -27,14 +30,10 @@ python3 scripts/check_site.py
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000` on your own computer.
+Open `http://localhost:8000` locally. The deployment uses relative asset links so the project subpath works.
 
-## Add the Minecraft videos
+## Videos and sources
 
-Put the recordings in `static/videos/` and edit `src`, `title`, and `caption` in `static/js/config.js`. Paths are relative to `index.html`, for example `static/videos/comparison-1.mp4`, without a leading slash. Leave `src` empty until the recording is available.
+Edit `static/js/config.js` to configure the two recordings. Empty sources intentionally remain placeholders. Preserve your existing configuration and recordings when replacing website files.
 
-Keep your existing video configuration and recordings when replacing website files. `codeUrl` is reserved for the actual research-code URL; `websiteRepository` points to this project-page repository.
-
-## Sources and licensing
-
-The source manuscript and figure provenance are documented in `SOURCES.md` and `static/data/figure-provenance.json`. See `LICENSE` for the webpage-code and research-asset terms.
+See `SOURCES.md`, `static/data/figure-provenance.json`, and `LICENSE` for research sources, original-figure provenance, and licensing.

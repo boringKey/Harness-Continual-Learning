@@ -1,0 +1,337 @@
+{
+  "source": {
+    "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+    "type": "author-supplied manuscript",
+    "filename": "Harness_Continual_Learning__Continual_Adaptation_Beyond_Model_Parameters.pdf",
+    "pdf_pages": 20,
+    "sha256": "981d91543ed59fc13879bf9837e6278e8afdcea5d5af9bc8414232ea81fa4eb9",
+    "local_pdf": "static/paper/HCL.pdf",
+    "arxiv": "https://arxiv.org/abs/2608.19013",
+    "note": "Values are transcribed from the supplied manuscript, not from the older arXiv v1. No new arXiv version is asserted."
+  },
+  "display_order": [
+    "alfworld",
+    "minecraft",
+    "textual",
+    "multimodal"
+  ],
+  "alfworld": {
+    "name": "ALFWorld",
+    "backbone": "Qwen3.5-9B",
+    "source_label": "Table 1",
+    "page": 7,
+    "columns": [
+      "Method",
+      "Pick",
+      "Look",
+      "Clean",
+      "Heat",
+      "Cool",
+      "Two-object",
+      "Final Avg. ↑",
+      "Avg. Fgt. (%) ↓"
+    ],
+    "rows": [
+      [
+        "Static Harness",
+        95.8,
+        66.7,
+        25.8,
+        26.1,
+        9.5,
+        58.8,
+        47.12,
+        null
+      ],
+      [
+        "RAG Baseline",
+        95.8,
+        83.3,
+        41.9,
+        39.1,
+        14.3,
+        58.8,
+        55.56,
+        1.74
+      ],
+      [
+        "MemP",
+        95.8,
+        83.3,
+        48.4,
+        34.8,
+        9.5,
+        47.1,
+        53.15,
+        5.18
+      ],
+      [
+        "MemRL",
+        95.83,
+        88.89,
+        41.94,
+        39.13,
+        57.14,
+        41.18,
+        60.68,
+        1.76
+      ],
+      [
+        "Stability-HCL",
+        100.0,
+        83.3,
+        51.6,
+        30.4,
+        28.6,
+        76.5,
+        61.74,
+        2.64
+      ],
+      [
+        "Plasticity-HCL",
+        100.0,
+        77.8,
+        41.9,
+        39.1,
+        19.0,
+        100.0,
+        62.98,
+        10.94
+      ]
+    ]
+  },
+  "minecraft": {
+    "name": "Minecraft",
+    "backbone": "deepseek-v4-flash-0731",
+    "source_label": "Figure 3 / Section 4.1",
+    "page": 7,
+    "profile": "Plasticity-HCL",
+    "curriculum_tasks": 50,
+    "completed_tasks": {
+      "Plasticity-HCL": 50,
+      "Static Harness": 15
+    },
+    "environment_actions": {
+      "Plasticity-HCL": 83,
+      "MemRL": 88,
+      "MemP": 91
+    },
+    "note": "Only explicitly reported endpoints are tabulated. The original progression and action curves remain available in the supplied PDF; no trajectories are reconstructed."
+  },
+  "textual": {
+    "name": "Textual reasoning",
+    "backbone": "DeepSeek-V4.1-Flash",
+    "source_label": "Table 2 · textual",
+    "page": 8,
+    "columns": [
+      "Method",
+      "MuSiQue",
+      "ProofWriter",
+      "GSM8K",
+      "HotpotQA",
+      "Final Avg. ↑",
+      "Avg. Fgt. (%) ↓"
+    ],
+    "rows": [
+      [
+        "Zero-shot",
+        48.0,
+        79.2,
+        65.2,
+        62.2,
+        63.65,
+        null
+      ],
+      [
+        "MemP",
+        51.4,
+        78.8,
+        70.8,
+        60.8,
+        65.45,
+        0.47
+      ],
+      [
+        "MemRL",
+        53.8,
+        80.0,
+        77.4,
+        64.2,
+        68.85,
+        0.07
+      ],
+      [
+        "Plasticity-HCL",
+        58.6,
+        85.6,
+        96.0,
+        64.2,
+        76.1,
+        0.4
+      ],
+      [
+        "Stability-HCL",
+        53.6,
+        82.8,
+        82.6,
+        63.6,
+        70.65,
+        0.27
+      ]
+    ]
+  },
+  "multimodal": {
+    "name": "Multimodal perception",
+    "backbone": "Qwen3.6-27B",
+    "source_label": "Table 2 · multimodal",
+    "page": 8,
+    "columns": [
+      "Method",
+      "Detection",
+      "Caption",
+      "Grounding",
+      "VQAv2",
+      "Final Mean ↑",
+      "Avg. Fgt. (%) ↓"
+    ],
+    "rows": [
+      [
+        "Zero-shot",
+        37.52,
+        21.1,
+        43.0,
+        85.47,
+        46.77,
+        null
+      ],
+      [
+        "MemP",
+        58.67,
+        31.89,
+        90.8,
+        79.27,
+        65.16,
+        0.0
+      ],
+      [
+        "MemRL",
+        59.33,
+        30.66,
+        91.4,
+        77.6,
+        64.75,
+        0.0
+      ],
+      [
+        "Plasticity-HCL",
+        64.14,
+        37.31,
+        90.6,
+        79.8,
+        67.96,
+        0.81
+      ],
+      [
+        "Stability-HCL",
+        65.34,
+        39.41,
+        91.6,
+        79.33,
+        68.92,
+        0.22
+      ]
+    ]
+  },
+  "selected_comparisons": {
+    "alfworld": {
+      "method": "Plasticity-HCL",
+      "baseline_method": "MemRL",
+      "baseline_value": 60.68,
+      "selected_value": 62.98,
+      "absolute_gain": 2.3,
+      "unit": "pp",
+      "source_label": "Table 1",
+      "page": 7,
+      "note": "Difference computed from the tabulated values; not a relative percent increase."
+    },
+    "minecraft": {
+      "method": "Plasticity-HCL",
+      "baseline_method": "Static Harness",
+      "baseline_value": 15,
+      "selected_value": 50,
+      "absolute_gain": 35.0,
+      "unit": "tasks",
+      "source_label": "Figure 3 / Section 4.1",
+      "page": 7,
+      "note": "Difference computed from the tabulated values; not a relative percent increase."
+    },
+    "textual": {
+      "method": "Plasticity-HCL",
+      "baseline_method": "MemRL",
+      "baseline_value": 68.85,
+      "selected_value": 76.1,
+      "absolute_gain": 7.25,
+      "unit": "pp",
+      "source_label": "Table 2 · textual",
+      "page": 8,
+      "note": "Difference computed from the tabulated values; not a relative percent increase."
+    },
+    "multimodal": {
+      "method": "Stability-HCL",
+      "baseline_method": "MemP",
+      "baseline_value": 65.16,
+      "selected_value": 68.92,
+      "absolute_gain": 3.76,
+      "unit": "pts",
+      "source_label": "Table 2 · multimodal",
+      "page": 8,
+      "note": "Difference computed from the tabulated values; not a relative percent increase."
+    }
+  },
+  "starting_point_comparisons": {
+    "alfworld": {
+      "method": "Plasticity-HCL",
+      "baseline_method": "Static Harness",
+      "baseline_value": 47.12,
+      "selected_value": 62.98,
+      "absolute_gain": 15.86,
+      "unit": "pp",
+      "source_label": "Table 1",
+      "page": 7,
+      "note": "Static Harness is the reported non-adaptive baseline; it is not relabeled as Zero-shot."
+    },
+    "minecraft": {
+      "method": "Plasticity-HCL",
+      "baseline_method": "Static Harness",
+      "baseline_value": 15,
+      "selected_value": 50,
+      "absolute_gain": 35.0,
+      "unit": "tasks",
+      "source_label": "Figure 3 / Section 4.1",
+      "page": 7,
+      "note": "Static Harness is the reported non-adaptive baseline; it is not relabeled as Zero-shot."
+    },
+    "textual": {
+      "method": "Plasticity-HCL",
+      "baseline_method": "Zero-shot",
+      "baseline_value": 63.65,
+      "selected_value": 76.1,
+      "absolute_gain": 12.45,
+      "unit": "pp",
+      "source_label": "Table 2 · textual",
+      "page": 8,
+      "note": "Zero-shot uses the same frozen foundation model, without sequential HCL updates. Absolute gains are computed from Table 2."
+    },
+    "multimodal": {
+      "method": "Stability-HCL",
+      "baseline_method": "Zero-shot",
+      "baseline_value": 46.77,
+      "selected_value": 68.92,
+      "absolute_gain": 22.15,
+      "unit": "pts",
+      "source_label": "Table 2 · multimodal",
+      "page": 8,
+      "note": "Zero-shot uses the same frozen foundation model, without sequential HCL updates. Absolute gains are computed from Table 2."
+    }
+  }
+}

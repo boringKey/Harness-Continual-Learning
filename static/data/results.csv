@@ -1,0 +1,114 @@
+setting,method,metric,value,source,pdf_page
+alfworld,Static Harness,Pick,95.80,Table 1,7
+alfworld,Static Harness,Look,66.70,Table 1,7
+alfworld,Static Harness,Clean,25.80,Table 1,7
+alfworld,Static Harness,Heat,26.10,Table 1,7
+alfworld,Static Harness,Cool,9.50,Table 1,7
+alfworld,Static Harness,Two-object,58.80,Table 1,7
+alfworld,Static Harness,Final Avg. ↑,47.12,Table 1,7
+alfworld,Static Harness,Avg. Fgt. (%) ↓,,Table 1,7
+alfworld,RAG Baseline,Pick,95.80,Table 1,7
+alfworld,RAG Baseline,Look,83.30,Table 1,7
+alfworld,RAG Baseline,Clean,41.90,Table 1,7
+alfworld,RAG Baseline,Heat,39.10,Table 1,7
+alfworld,RAG Baseline,Cool,14.30,Table 1,7
+alfworld,RAG Baseline,Two-object,58.80,Table 1,7
+alfworld,RAG Baseline,Final Avg. ↑,55.56,Table 1,7
+alfworld,RAG Baseline,Avg. Fgt. (%) ↓,1.74,Table 1,7
+alfworld,MemP,Pick,95.80,Table 1,7
+alfworld,MemP,Look,83.30,Table 1,7
+alfworld,MemP,Clean,48.40,Table 1,7
+alfworld,MemP,Heat,34.80,Table 1,7
+alfworld,MemP,Cool,9.50,Table 1,7
+alfworld,MemP,Two-object,47.10,Table 1,7
+alfworld,MemP,Final Avg. ↑,53.15,Table 1,7
+alfworld,MemP,Avg. Fgt. (%) ↓,5.18,Table 1,7
+alfworld,MemRL,Pick,95.83,Table 1,7
+alfworld,MemRL,Look,88.89,Table 1,7
+alfworld,MemRL,Clean,41.94,Table 1,7
+alfworld,MemRL,Heat,39.13,Table 1,7
+alfworld,MemRL,Cool,57.14,Table 1,7
+alfworld,MemRL,Two-object,41.18,Table 1,7
+alfworld,MemRL,Final Avg. ↑,60.68,Table 1,7
+alfworld,MemRL,Avg. Fgt. (%) ↓,1.76,Table 1,7
+alfworld,Stability-HCL,Pick,100.00,Table 1,7
+alfworld,Stability-HCL,Look,83.30,Table 1,7
+alfworld,Stability-HCL,Clean,51.60,Table 1,7
+alfworld,Stability-HCL,Heat,30.40,Table 1,7
+alfworld,Stability-HCL,Cool,28.60,Table 1,7
+alfworld,Stability-HCL,Two-object,76.50,Table 1,7
+alfworld,Stability-HCL,Final Avg. ↑,61.74,Table 1,7
+alfworld,Stability-HCL,Avg. Fgt. (%) ↓,2.64,Table 1,7
+alfworld,Plasticity-HCL,Pick,100.00,Table 1,7
+alfworld,Plasticity-HCL,Look,77.80,Table 1,7
+alfworld,Plasticity-HCL,Clean,41.90,Table 1,7
+alfworld,Plasticity-HCL,Heat,39.10,Table 1,7
+alfworld,Plasticity-HCL,Cool,19.00,Table 1,7
+alfworld,Plasticity-HCL,Two-object,100.00,Table 1,7
+alfworld,Plasticity-HCL,Final Avg. ↑,62.98,Table 1,7
+alfworld,Plasticity-HCL,Avg. Fgt. (%) ↓,10.94,Table 1,7
+minecraft,Plasticity-HCL,completed_tasks,50,Figure 3 / Section 4.1,7
+minecraft,Static Harness,completed_tasks,15,Figure 3 / Section 4.1,7
+minecraft,Plasticity-HCL,environment_actions,83,Figure 3 / Section 4.1,7
+minecraft,MemRL,environment_actions,88,Figure 3 / Section 4.1,7
+minecraft,MemP,environment_actions,91,Figure 3 / Section 4.1,7
+textual,Zero-shot,MuSiQue,48.00,Table 2 · textual,8
+textual,Zero-shot,ProofWriter,79.20,Table 2 · textual,8
+textual,Zero-shot,GSM8K,65.20,Table 2 · textual,8
+textual,Zero-shot,HotpotQA,62.20,Table 2 · textual,8
+textual,Zero-shot,Final Avg. ↑,63.65,Table 2 · textual,8
+textual,Zero-shot,Avg. Fgt. (%) ↓,,Table 2 · textual,8
+textual,MemP,MuSiQue,51.40,Table 2 · textual,8
+textual,MemP,ProofWriter,78.80,Table 2 · textual,8
+textual,MemP,GSM8K,70.80,Table 2 · textual,8
+textual,MemP,HotpotQA,60.80,Table 2 · textual,8
+textual,MemP,Final Avg. ↑,65.45,Table 2 · textual,8
+textual,MemP,Avg. Fgt. (%) ↓,0.47,Table 2 · textual,8
+textual,MemRL,MuSiQue,53.80,Table 2 · textual,8
+textual,MemRL,ProofWriter,80.00,Table 2 · textual,8
+textual,MemRL,GSM8K,77.40,Table 2 · textual,8
+textual,MemRL,HotpotQA,64.20,Table 2 · textual,8
+textual,MemRL,Final Avg. ↑,68.85,Table 2 · textual,8
+textual,MemRL,Avg. Fgt. (%) ↓,0.07,Table 2 · textual,8
+textual,Plasticity-HCL,MuSiQue,58.60,Table 2 · textual,8
+textual,Plasticity-HCL,ProofWriter,85.60,Table 2 · textual,8
+textual,Plasticity-HCL,GSM8K,96.00,Table 2 · textual,8
+textual,Plasticity-HCL,HotpotQA,64.20,Table 2 · textual,8
+textual,Plasticity-HCL,Final Avg. ↑,76.10,Table 2 · textual,8
+textual,Plasticity-HCL,Avg. Fgt. (%) ↓,0.40,Table 2 · textual,8
+textual,Stability-HCL,MuSiQue,53.60,Table 2 · textual,8
+textual,Stability-HCL,ProofWriter,82.80,Table 2 · textual,8
+textual,Stability-HCL,GSM8K,82.60,Table 2 · textual,8
+textual,Stability-HCL,HotpotQA,63.60,Table 2 · textual,8
+textual,Stability-HCL,Final Avg. ↑,70.65,Table 2 · textual,8
+textual,Stability-HCL,Avg. Fgt. (%) ↓,0.27,Table 2 · textual,8
+multimodal,Zero-shot,Detection,37.52,Table 2 · multimodal,8
+multimodal,Zero-shot,Caption,21.10,Table 2 · multimodal,8
+multimodal,Zero-shot,Grounding,43.00,Table 2 · multimodal,8
+multimodal,Zero-shot,VQAv2,85.47,Table 2 · multimodal,8
+multimodal,Zero-shot,Final Mean ↑,46.77,Table 2 · multimodal,8
+multimodal,Zero-shot,Avg. Fgt. (%) ↓,,Table 2 · multimodal,8
+multimodal,MemP,Detection,58.67,Table 2 · multimodal,8
+multimodal,MemP,Caption,31.89,Table 2 · multimodal,8
+multimodal,MemP,Grounding,90.80,Table 2 · multimodal,8
+multimodal,MemP,VQAv2,79.27,Table 2 · multimodal,8
+multimodal,MemP,Final Mean ↑,65.16,Table 2 · multimodal,8
+multimodal,MemP,Avg. Fgt. (%) ↓,0.00,Table 2 · multimodal,8
+multimodal,MemRL,Detection,59.33,Table 2 · multimodal,8
+multimodal,MemRL,Caption,30.66,Table 2 · multimodal,8
+multimodal,MemRL,Grounding,91.40,Table 2 · multimodal,8
+multimodal,MemRL,VQAv2,77.60,Table 2 · multimodal,8
+multimodal,MemRL,Final Mean ↑,64.75,Table 2 · multimodal,8
+multimodal,MemRL,Avg. Fgt. (%) ↓,0.00,Table 2 · multimodal,8
+multimodal,Plasticity-HCL,Detection,64.14,Table 2 · multimodal,8
+multimodal,Plasticity-HCL,Caption,37.31,Table 2 · multimodal,8
+multimodal,Plasticity-HCL,Grounding,90.60,Table 2 · multimodal,8
+multimodal,Plasticity-HCL,VQAv2,79.80,Table 2 · multimodal,8
+multimodal,Plasticity-HCL,Final Mean ↑,67.96,Table 2 · multimodal,8
+multimodal,Plasticity-HCL,Avg. Fgt. (%) ↓,0.81,Table 2 · multimodal,8
+multimodal,Stability-HCL,Detection,65.34,Table 2 · multimodal,8
+multimodal,Stability-HCL,Caption,39.41,Table 2 · multimodal,8
+multimodal,Stability-HCL,Grounding,91.60,Table 2 · multimodal,8
+multimodal,Stability-HCL,VQAv2,79.33,Table 2 · multimodal,8
+multimodal,Stability-HCL,Final Mean ↑,68.92,Table 2 · multimodal,8
+multimodal,Stability-HCL,Avg. Fgt. (%) ↓,0.22,Table 2 · multimodal,8

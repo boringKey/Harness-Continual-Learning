@@ -1,0 +1,70 @@
+{
+  "scope": "local HTTP checks, NOT live deployment",
+  "routes": [
+    {
+      "path": "/Harness-Continual-Learning/",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/citation.bib",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/css/style.css",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/images/figure-1-comparison-1600.webp",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/images/figure-1-comparison.png",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/images/figure-1-comparison.webp",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/images/framework-1600.webp",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/images/framework.png",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/images/framework.webp",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/images/paper-mark.png",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/js/config.js",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/js/main.js",
+      "status": 200,
+      "exact_bytes": true
+    },
+    {
+      "path": "/Harness-Continual-Learning/static/paper/HCL.pdf",
+      "status": 200,
+      "exact_bytes": true
+    }
+  ]
+}
