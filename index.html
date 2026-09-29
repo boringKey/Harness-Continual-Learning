@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="hcl-deployment" content="hcl-v11-resource-links-20260929"/>
+<meta name="hcl-deployment" content="hcl-v13-minecraft-videos-20260929"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#ffffff" name="theme-color"/>
 <title>Harness Continual Learning</title>
@@ -22,7 +22,8 @@
 <meta content="https://boringkey.github.io/Harness-Continual-Learning/static/paper/HCL.pdf" name="citation_pdf_url"/>
 <link href="static/images/paper-mark.png" rel="icon" type="image/png"/>
 <link href="static/css/style.css" rel="stylesheet"/>
-<script defer="" src="static/js/config.js"></script>
+<link href="static/css/minecraft-demo.css" rel="stylesheet"/>
+<script defer="" src="static/js/config.js?v=minecraft-demo-20260929"></script>
 <script defer="" src="static/js/main.js"></script>
 </head>
 <body>
@@ -44,11 +45,27 @@
 <a class="button" href="https://huggingface.co/RL-MIND/Harness-Continual-Learning" rel="noopener noreferrer" target="_blank"><span aria-hidden="true" class="icon" style="font-size:18px;line-height:1">🤗</span> Hugging Face</a>
 <a class="button" href="#citation"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M10 5H4v7h5c0 4-2 6-5 7M20 5h-6v7h5c0 4-2 6-5 7"></path></svg> BibTeX</a>
 </div>
-</section><section aria-labelledby="demos-title" class="section demos-section container" id="demos"><div class="section-heading editorial-heading"><h2 id="demos-title">Continual learning in Minecraft</h2><p>Capability accumulation and skill reuse across sequential Minecraft tasks.</p></div><div class="video-grid"><figure class="video-card" id="comparison-1">
-<div class="video-stage blue-stage"><div class="video-placeholder"><span class="play-mark"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"></path></svg></span><span class="placeholder-label">Comparison video forthcoming</span></div><video aria-label="Comparison 1" controls="" hidden="" playsinline="" preload="metadata"></video></div>
-<figcaption><div><h3 class="video-title">Comparison 1</h3><p class="video-caption">A comparison recording will be added here.</p></div></figcaption></figure><figure class="video-card" id="comparison-2">
-<div class="video-stage sage-stage"><div class="video-placeholder"><span class="play-mark"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"></path></svg></span><span class="placeholder-label">Comparison video forthcoming</span></div><video aria-label="Comparison 2" controls="" hidden="" playsinline="" preload="metadata"></video></div>
-<figcaption><div><h3 class="video-title">Comparison 2</h3><p class="video-caption">A comparison recording will be added here.</p></div></figcaption></figure></div></section>
+</section><section aria-labelledby="demos-title" class="section demos-section container" id="demos">
+<div class="section-heading editorial-heading"><h2 id="demos-title">Continual learning in Minecraft</h2><p>DeepSeek V4.1 Flash<br/>Reasoning effort: <strong>Max</strong> in both runs.</p></div>
+<div class="video-grid minecraft-comparison">
+<figure class="video-card" id="comparison-1">
+<div class="video-heading"><h3 class="video-title" id="zero-shot-video-title">Zero-shot</h3><span class="video-outcome outcome-failure">Stops at task 22</span></div>
+<div class="video-stage blue-stage">
+<div class="video-placeholder" hidden=""><span class="placeholder-label">Video unavailable</span><span class="placeholder-detail">The recording could not be loaded. Please try again later.</span></div>
+<video aria-label="Zero-shot" aria-describedby="zero-shot-caption" controls="" playsinline="" preload="metadata" width="1280" height="720" src="static/videos/minecraft-zero-shot.mp4">Your browser does not support embedded video.</video>
+</div>
+<figcaption><p class="video-caption" id="zero-shot-caption">DeepSeek V4.1 Flash (reasoning effort: Max) fails at task 22, “Mine 3 coal,” and cannot proceed to subsequent tasks.</p></figcaption>
+</figure>
+<figure class="video-card" id="comparison-2">
+<div class="video-heading"><h3 class="video-title" id="hcl-video-title">HCL</h3><span class="video-outcome outcome-success">Completes all 50 tasks</span></div>
+<div class="video-stage sage-stage">
+<div class="video-placeholder" hidden=""><span class="placeholder-label">Video unavailable</span><span class="placeholder-detail">The recording could not be loaded. Please try again later.</span></div>
+<video aria-label="HCL" aria-describedby="hcl-caption" controls="" playsinline="" preload="metadata" width="1280" height="720" src="static/videos/minecraft-hcl.mp4">Your browser does not support embedded video.</video>
+</div>
+<figcaption><p class="video-caption" id="hcl-caption">With Harness Continual Learning (HCL), the same model and reasoning effort successfully complete task 22, where the zero-shot run failed, and continue through the remaining tasks, ultimately completing all 50 tasks.</p></figcaption>
+</figure>
+</div>
+</section>
 <section aria-labelledby="overview-title" class="section overview-section container" id="overview">
 <div class="overview-intro">
 <h2 id="overview-title">The harness becomes the <span>continual learning state.</span></h2>

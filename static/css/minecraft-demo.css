@@ -1,0 +1,19 @@
+/* Minecraft video comparison. Scoped to the demo section. */
+.minecraft-comparison { align-items: start; gap: 24px; }
+.minecraft-comparison .video-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 11px; min-height: 30px; }
+.minecraft-comparison .video-title { margin: 0; font-size: 18px; font-weight: 600; line-height: 1.35; color: var(--ink); }
+.minecraft-comparison .video-outcome { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 550; line-height: 1.5; white-space: nowrap; }
+.minecraft-comparison .outcome-failure { color: #8a5a46; background: #f8efe9; }
+.minecraft-comparison .outcome-success { color: #4b7044; background: #edf4e9; }
+.minecraft-comparison .video-stage { background: #101619; }
+.minecraft-comparison .video-stage:has(video[hidden]) { background: var(--surface); }
+.minecraft-comparison figcaption { padding-top: 12px; }
+.minecraft-comparison .video-caption { font-size: 14px; line-height: 1.75; color: var(--body); }
+#demos .editorial-heading > p strong { color: var(--blue-dark); font-weight: 600; }
+@media (max-width: 620px) {
+  .minecraft-comparison { gap: 28px; }
+  .minecraft-comparison .video-heading { margin-bottom: 9px; }
+  .minecraft-comparison .video-title { font-size: 17px; }
+  .minecraft-comparison .video-outcome { font-size: 11px; padding: 4px 9px; }
+  .minecraft-comparison .video-caption { font-size: 14px; line-height: 1.7; }
+}
